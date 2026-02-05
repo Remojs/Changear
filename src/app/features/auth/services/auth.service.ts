@@ -96,4 +96,9 @@ export class AuthService {
   getToken(): string | null {
     return localStorage.getItem('token');
   }
+
+  //Cerrar sesión - Limpia todos los datos de autenticación
+  logout(): void {
+    this.clearAuthData();
+  }
 }
