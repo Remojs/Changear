@@ -65,7 +65,7 @@ export class LoginComponent {
         
         // Redirigir al home después de 1 segundo
         setTimeout(() => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/home']);
         }, 1000);
       },
       error: (error) => {
